@@ -12,7 +12,7 @@ function findMatching(drivers, string) {
 
 function fuzzyMatch(drivers, string) {
     let even = drivers.filter(n => {
-        return n.search(string);
+        return n.startsWith(string);
     });
 
     return even
